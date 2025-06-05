@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supercell Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+      font-weight: bold;
+    }
+
+    body {
+      background-color: #000;
+      background-image: url('./bgsc.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      padding-bottom: 4em;
+      /* espace pour footer */
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 10px 10px;
+    }
+
+    .titlesp {
+      font-size: 1.8rem;
+      color: #faf7e9;
+    }
+
+    .titlesp2 {
+      font-size: 2.8rem;
+      color: #faf7e9;
+    }
+
+    header h4 {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background-color: #181818;
+      padding: 20px 10px;
+      border-top: 5px solid #030303;
+      border-bottom: 5px solid #030303;
+    }
+
+    .navbar li {
+      list-style: none;
+      text-align: center;
+    }
+
+    .navbar li a img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid #000;
+      transition: 0.3s ease;
+    }
+
+    .navbar li a:hover img {
+      box-shadow: 0 0 12px #f0c000;
+    }
+
+    .jeu {
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      padding: 30px 15px;
+    }
+
+    .texte-carre {
+      background-color: rgba(30, 30, 30, 0.9);
+      border-radius: 20px;
+      padding: 20px;
+      width: 100%;
+      max-width: 700px;
+    }
+
+    .texte-carre h1 {
+      color: #f0c000;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .texte-carre p,
+    .texte-carre li {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .texte-carre ul {
+      padding-left: 20px;
+    }
+
+    footer.droit {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3em;
+      background-color: #181818;
+      color: rgb(180, 158, 158);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.85rem;
+      text-align: center;
+      padding: 26px;
+    }
+
+    @media (min-width: 600px) {
+      .navbar li a img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .titlesp2 {
+        font-size: 3.5rem;
+      }
+
+      .texte-carre h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2 class="titlesp">Bienvenue sur</h2>
+    <h1 class="titlesp2">Supercell Hub</h1>
+    <h4>Retrouvez tous les sites officiels de vos jeux préférés</h4>
+  </header>
+
+  <ul class="navbar">
+    <li>
+      <a href="p2 coc.html" target="_blank">
+        <img
+          src="https://play-lh.googleusercontent.com/LByrur1mTmPeNr0ljI-uAUcct1rzmTve5Esau1SwoAzjBXQUby6uHIfHbF9TAT51mgHm">
+      </a>
+      <p class="jeu">Clash of Clans</p>
+    </li>
+    <li>
+      <a href="p2 cr.html" target="_blank">
+        <img
+          src="https://play-lh.googleusercontent.com/gnSC6s8-6Tjc4uhvDW7nfrSJxpbhllzYhgX8y374N1LYvWBStn2YhozS9XXaz1T_Pi2q">
+      </a>
+      <p class="jeu">Clash Royale</p>
+    </li>
+    <li>
+      <a href="p2 bs.html" target="_blank">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/775b7153880035.5b0daa7e8855c.png">
+      </a>
+      <p class="jeu">Brawl Stars</p>
+    </li>
+    <li>
+      <a href="p2 bb.html" target="_blank">
+        <img
+          src="https://play-lh.googleusercontent.com/y_Dr51TrM3NfJO-bFECbGVXsjfFYo-6YjiJfIQwyNBX6VdBW8H8eSEZzpCXcGKKByyw">
+      </a>
+      <p class="jeu">Boom Beach</p>
+    </li>
+    <li>
+      <a href="p2 hd.html" target="_blank">
+        <img
+          src="https://play-lh.googleusercontent.com/Za8u0ChNK-3mZ3rnLcBirRBTzLYTdqaaAn63Ha9qKZiDp_bF_5u7OGfvWb1dg88WttKw">
+      </a>
+      <p class="jeu">Hay Day</p>
+    </li>
+    <li>
+      <a href="p2 sb.html" target="_blank">
+        <img
+          src="https://play-lh.googleusercontent.com/DZ4t2P3THtVpA1-UfUziJdflz30_JbTjaPdA2O2JZkAYDL2ZGiKfu7PPv9XF_9C7FFM">
+      </a>
+      <p class="jeu">Squad Busters</p>
+    </li>
+  </ul>
+
+  <div class="center">
+    <div class="texte-carre">
+      <h1>Qui est Supercell ?</h1>
+      <p>Supercell est un développeur de jeux mobiles connu pour ses jeux comme Clash of Clans, Clash Royale, Brawl
+        Stars, Boom Beach et Hay Day.</p>
+      <p>Cliquez sur l'un des jeux pour accéder à son site officiel.</p>
+      <h1>Fonctionnalités</h1>
+      <ul>
+        <li>Design responsive pour tous les écrans</li>
+        <li>Liens directs vers les sites officiels</li>
+        <li>Interface simple, claire et lisible</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="droit">
+    <h2>@ 2025 Supercell Hub, Tous droits réservés.</h2>
+  </footer>
+</body>
+
+</html>
