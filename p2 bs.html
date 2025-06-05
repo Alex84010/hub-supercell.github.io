@@ -63,3 +63,30 @@
             <button class="play" class="play2"
               onclick="window.location.href = 'https://supercell.com/en/games/brawlstars/fr/blog/'">
               INFOS
+
+              <script>
+        function test() {
+          fetch('https://api.brawlstars.com/v1/players/%232QJ880V9P', {
+            method: 'GET', // ou 'POST', 'PUT', etc.
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjZhOWI4ZDJmLTE0OWYtNDY1MS1iNzAzLTAyNGIxNzRlNjQwYiIsImlhdCI6MTc0OTEyODM4NSwic3ViIjoiZGV2ZWxvcGVyLzhmMjI0NDIwLWY5NmYtYjZiZi1iOTBkLTliODM5MzZmYzQ3MiIsInNjb3BlcyI6WyJicmF3bHN0YXJzIl0sImxpbWl0cyI6W3sidGllciI6ImRldmVsb3Blci9zaWx2ZXIiLCJ0eXBlIjoidGhyb3R0bGluZyJ9LHsiY2lkcnMiOlsiMzcuNTguMTk1LjQiLCIxODUuMTk5LjEwOS4xNTMiLCIxOTMuMTg2LjQuMTI0Il0sInR5cGUiOiJjbGllbnQifV19.P1rpAtM87Fst7bctkt_LQa53pPauQETZ4QeaMgnuhbacy7McBVjTak1WxSuygHG9OUaOFiXr3laM-4-N-ND8Iw'
+            }
+          })
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Erreur HTTP : ' + response.status);
+              }
+              return response.json();
+            })
+            .then(data => {
+              console.log('Données reçues :', data);
+            })
+            .catch(error => {
+              console.error('Erreur lors de l’appel API :', error);
+            });
+        }
+
+        test();
+
+      </script>
